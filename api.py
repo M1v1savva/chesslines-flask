@@ -45,6 +45,10 @@ def refresh_expiring_jwts(response):
         # Case where there is not a valid JWT. Just return the original respone
         return response
 
+@api.route('/confirmation', methods=['POST'])
+def confirmation():
+    return {"status": 200}
+
 @api.route('/login', methods=["POST"])
 def login_user():
     email = request.json.get("email", None)
