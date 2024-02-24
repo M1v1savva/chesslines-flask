@@ -5,3 +5,4 @@ requests==2.28.1
 Gunicorn
 python-dotenv
 flask_jwt_extended
+Werkzeug==2.2.2
